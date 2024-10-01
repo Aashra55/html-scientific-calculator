@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="0" id="inputbox">
+        <div class="small">
+            <button onclick="log()">log</button>
+            <button onclick="appendCube('\u00B3')">x<sup>3</sup></button>
+            <button onclick="appendOperator('\u0028')">(</button>
+            <button onclick="appendOperator('\u0029')">)</button>
+            <button onclick="pi()">pi</button>
+        </div>
+        <div class="small">
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+            <button onclick="root()">root</button>
+            <button onclick="factorial()">!</button>
+        </div>
+        <div class="big">
+            <button onclick="allClear()" class="clear">AC</button>
+            <button onclick="delChar()">DEL</button>
+            <button onclick="appendOperator('%')" class="changeColor">%</button>
+            <button onclick="appendOperator('/')" class="changeColor">/</button>
+        </div>
+        <div class="big">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button onclick="appendOperator('-')" class="changeColor">-</button>
+        </div>
+        <div class="big">
+            <button onclick="appendOperator(4)">4</button>
+            <button onclick="appendOperator(5)">5</button>
+            <button onclick="appendOperator(6)">6</button>
+            <button onclick="appendOperator('*')" class="changeColor">*</button>
+        </div>
+        <div class="big">
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button onclick="appendOperator('+')" class="changeColor">+</button>
+        </div>
+        <div class="big">
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="(appendDecimal())">.</button>
+            <button onclick="appendSquare('\u00B2')">x<sup>2</sup></button>
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
